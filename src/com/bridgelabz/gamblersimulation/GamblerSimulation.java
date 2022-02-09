@@ -11,19 +11,7 @@ public class GamblerSimulation {
         System.out.println("Amount to bet after every play "+EVERY_GAME_BET);
         int play = (int) Math.floor(Math.random() * 10) % 2;
         System.out.println("Gamblers play:"+play);
-        int cashInHand = EVERY_DAY_STAKE;
-        switch(play) {
-            case 1:
-                cashInHand = cashInHand + EVERY_GAME_BET;
-                System.out.println("Total current cash gambler has "+cashInHand);
-                break;
-            case 2:
-                cashInHand = cashInHand - EVERY_GAME_BET;
-                System.out.println("Total current cash gambler has "+cashInHand);
-                break;
-            default:
-                System.out.println("default");
-        }
+
         if(play == 1) {
             System.out.println("Player won the first play");
         }
